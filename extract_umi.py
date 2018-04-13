@@ -84,7 +84,7 @@ class extract_umi(object):
                     umi_uniq2.append("%s  %d\n"%(n.strip('\n'),len(np.where(umi_np==n)[0])))
                     finished=count/t
                     count+=1
-                    process_bar='['+'#'*finished*80+' '*(1-finished)*80+']'+'%.2f'%(finished*100)+'%'+'\r'
+                    process_bar='['+'#'*int(finished*80)+' '*int((1-finished)*80)+']'+'%.2f'%(finished*100)+'%'+'\r'
                     sys.stdout.write(process_bar)
                     sys.stdout.flush()
                 with open(fq[:-3]+'_umi_uniq.txt','w')as f:
