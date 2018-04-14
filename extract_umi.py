@@ -83,6 +83,10 @@ class extract_umi(object):
                             seq=f.readline()
                             h2=f.readline()
                             sc=f.readline()
+                            h1=f1.readline()
+                            seq1=f1.readline()
+                            h21=f1.readline()
+                            sc1=f1.readline()
                 with open(fq2[:-3]+'_extract.fq','w')as f:
                     for n in range(len(h_tol)):
                         f.write(h_tol[n])
