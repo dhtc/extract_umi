@@ -73,8 +73,8 @@ class extract_umi(object):
                                 fq1_seq.append(seq1)
                                 fq1_h2.append(h21)
                                 fq1_sc.append(sc1)
-                                umi.setdefault(fq,[])
-                                umi[fq].append(res.group(1)+'\n')
+                                umi.setdefault(fq2,[])
+                                umi[fq2].append(res.group(1)+'\n')
                                 # finished=(fqs.index(fq)+1)/len(fqs)*()
                                 # process_bar='['+'#'*finished+' '*(1-finished)+']'+'%.2f'%finished+'%'+'\r'
                                 # sys.stdout.write(process_bar)
