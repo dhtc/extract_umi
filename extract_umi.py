@@ -52,11 +52,6 @@ class extract_umi(object):
             if fq2.endswith('gz'):
                 pass
             elif fq2.endswith(('fq','fastq')):
-                    while fq1_h:
-                        fq1_h.append(f.readline())
-                        fq1_seq.append(f.readline())
-                        fq1_h2.append(f.readline())
-                        fq1_sc.append(f.readline())
                 with open(fq2,'r')as f:
                     with open(fq1, 'r')as f1:
                         h=f.readline()
