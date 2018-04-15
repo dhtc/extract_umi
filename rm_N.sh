@@ -6,6 +6,6 @@ do
 	for k in `cat ${n}_has_N`
 	do
 		let m=$k+3
-		sed -n '$k,$mp' $n>${n}_trim_N
+		sed -n '$k,$mp' $n>${n%.fq}_trim_N.fq
 	done
 done
