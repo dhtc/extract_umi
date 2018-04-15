@@ -6,6 +6,6 @@ do
 	for k in `cat j`
 	do
 		let m=$k+3
-		sed -n "$k,${m}p" $n>${n%.fq}_trim_N.fq
+		sed -n "$k,${m}p" $n>>${n%.fq}_trim_N.fq
 	done
 done
